@@ -215,7 +215,13 @@
       },
       {
         "text": "How are my armor repairs coming?",
-        "condition": { "or": [ { "u_has_var": "dialogue_hub_rnd_u_current_project", "value": "combat_exoskeleton_light_salvaged" } ] },
+        "condition": {
+          "or": [
+            { "u_has_var": "dialogue_hub_rnd_u_current_project", "value": "phase_immersion_suit" },
+            { "u_has_var": "dialogue_hub_rnd_u_current_project", "value": "rm13_armor" },
+            { "u_has_var": "dialogue_hub_rnd_u_current_project", "value": "combat_exoskeleton_light_salvaged" }
+          ]
+        },
         "topic": "TALK_ROBOFAC_INTERCOM_PROTOTYPE_ONGOING"
       },
       {
